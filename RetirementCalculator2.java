@@ -18,27 +18,12 @@ public class RetirementCalculator2 {
 		System.setProperty("webdriver.chrome.driver","C:\\Eswari\\chromedriver.exe" );
   		WebDriver driver=new ChromeDriver();
   		driver.manage().window().maximize();
-		driver.get("https://www.westpac.co.nz");
+		driver.get("https://www.westpac.co.nz/kiwisaver/calculators/kiwisaver-calculator/");
 		
-		//mouse hover over action to the Kiwisaver menu	
-				Actions actions = new Actions(driver);
-				WebElement mainMenu = driver.findElement(By.xpath("//*[@id='ubermenu-section-link-kiwisaver-ps']"));
-				actions.moveToElement(mainMenu);
-				
-		// clicking the submenu under Kiwisaver
-				WebElement subMenu = driver.findElement(By.cssSelector("#ubermenu-item-cta-kiwisaver-calculators-ps"));
-				actions.moveToElement(subMenu);
-				actions.click().build().perform();
-				
-				driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-				
-		//clicking the button in the webpag - click here to get started		
-			    WebElement btn = driver.findElement(By.linkText("Click here to get started."));
-			    actions.moveToElement(btn);
-				actions.click().build().perform();
-				
-		//wait till the page loads
-				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+ 		 
+  		Actions actions = new Actions(driver);
+		
+		
 				
 		//Switch to iframe to find the text box element for current age		
 				driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\'calculator-embed\']/iframe")));
