@@ -1,3 +1,6 @@
+// User Story2 - Acceptance Criteia 1
+//User whose Current age is 30 is Employed @ a Salary 82000 p/a, contributes to KiwiSaver @ 4% and chooses a Defensive risk profile can calculate his projected balances at retirement.
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,29 +21,8 @@ public class RetirementCalculator {
 		System.setProperty("webdriver.chrome.driver","C:\\Eswari\\chromedriver.exe" );
   		WebDriver driver=new ChromeDriver();
   		driver.manage().window().maximize();
-/*		driver.get("https://www.westpac.co.nz");
-		
-		//mouse hover over action to the Kiwisaver menu	
-				Actions actions = new Actions(driver);
-				WebElement mainMenu = driver.findElement(By.xpath("//*[@id='ubermenu-section-link-kiwisaver-ps']"));
-				actions.moveToElement(mainMenu);
+	
 				
-		// clicking the submenu under Kiwisaver
-				WebElement subMenu = driver.findElement(By.cssSelector("#ubermenu-item-cta-kiwisaver-calculators-ps"));
-				actions.moveToElement(subMenu);
-				actions.click().build().perform();
-				
-				driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-				
-		//clicking the button in the webpag - click here to get started		
-			    WebElement btn = driver.findElement(By.linkText("Click here to get started."));
-			    actions.moveToElement(btn);
-				actions.click().build().perform();
-				
-		//wait till the page loads
-				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				
-				*/
   		driver.get("https://www.westpac.co.nz/kiwisaver/calculators/kiwisaver-calculator/");
 		
  		 
