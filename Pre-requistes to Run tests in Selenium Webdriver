@@ -1,3 +1,10 @@
+Pre-requisites:
+
+JDK, Eclipse, WebDriver(selenium standalone jar file), browser, application to be tested.
+
+Steps to install selenium webdriver:
+
+
 Step:1 - Download and install the Java Software Development Kit (JDK)
 Step: 2 - Download and install latest version of "Eclipse IDE for Java Developers" 
 Step: 3- Download Selenium Webdriver for Java Client Driver
