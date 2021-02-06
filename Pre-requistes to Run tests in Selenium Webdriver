@@ -1,0 +1,25 @@
+Step:1 - Download and install the Java Software Development Kit (JDK)
+Step: 2 - Download and install latest version of "Eclipse IDE for Java Developers" 
+Step: 3- Download Selenium Webdriver for Java Client Driver
+Step 4 - Configure Eclipse IDE with WebDriver by following the below steps:
+      * Launch the "eclipse.exe" file inside the "eclipse" folder that we extracted in step 2. 
+      * When asked to select for a workspace, just accept the default location.
+      * Create a new project through File > New > Java Project. Name the project as "newproject".
+        A new pop-up window will open enter the below details: 
+          Project Name
+          Location to save project
+          Select an execution JRE
+          Select layout project option
+          Click on Finish button
+Step 5:
+Once step 4 finished right-click on the newly created project and Select New > Package, and name that package as "newpackage"
+Step 6:
+A pop-up window will open to name the package. Here enter the name of the package and click on Finish button
+Step 7:
+Create a new Java class under newpackage by right-clicking on it and then selecting- New > Class, and then name it  
+Step 8:
+Now add the external jars by right clicking on the new project and select properties. Then go to java buildpath->Libraries tab-> Add external jars button 
+Step 9: After adding the jarfiles click OK
+
+
+
