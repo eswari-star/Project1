@@ -1,3 +1,8 @@
+//TestUser storey1
+//Acceptance CriteriaScenario 1 
+//Given User Clicks information icon besides Current age the message “This calculator has an age limit of 64 years old as you need to be under the age of 65 to join KiwiSaver.” is displayed below the current age field.
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,9 +40,7 @@ public class Westpac {
 	    actions.moveToElement(icon).click().build().perform();
 		
 	   
-	//have to print the tooltip text for the help icon
-	//System.out.println(driver.findElement(By.id("content")).getText());	
-		
+	
 	
 		
 		
