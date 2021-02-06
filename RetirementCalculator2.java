@@ -1,3 +1,6 @@
+//Test user storey2: Acceptance Criteria#2
+// User whose current aged 45 is Self-employed, current KiwiSaver balance is $100000, voluntary contributes $90 fortnightly and chooses Conservative risk profile with saving goals requirement of $290000 can calculate his projected balances at retirement.
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,11 +43,11 @@ public class RetirementCalculator2 {
 		//Switch to iframe to find the text box element for current age		
 				driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\'calculator-embed\']/iframe")));
 				
-/*		//mouse hover over for current age textbox and sending keys								
+		//mouse hover over for current age textbox and sending keys								
 		 		WebElement currentage=driver.findElement(By.xpath("//*[@id='widget']/div/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/div[1]/div[1]/div/div[1]/div/div[1]/div/div/input"));
 				actions.moveToElement(currentage).click().sendKeys("45").build().perform();
 				
-				*/
+				
 			
 				// mouse hover over for dropdown field
 			    WebElement dpdown1 = driver.findElement(By.xpath("//*[@id='widget']/div/div[1]/div/div[1]/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div/div/div[1]/div"));
